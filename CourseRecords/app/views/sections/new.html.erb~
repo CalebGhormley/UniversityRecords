@@ -1,5 +1,9 @@
 <h1>New Section</h1>
 
 <%= render 'form', section: @section %>
-
+<ul>
+	<%@section.courses.each do |course|%>
+		<li><%= course.name %></li>
+	<%end%>
+</ul>
 <%= link_to 'Back', sections_path %>
