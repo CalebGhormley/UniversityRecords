@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <div class="nav">
+	  <%= link_to "Courses", courses_path %>
+  </div>
+
   <div class="field">
     <%= form.label :semester %>
     <%= form.text_field :semester, id: :section_semester %>

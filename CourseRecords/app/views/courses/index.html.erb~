@@ -13,8 +13,8 @@
     </tr>
   </thead>
 
-  <tbody> 
-      <% @courses.each do |course| %>
+  <tbody>
+    <% @courses.each do |course| %>
       <tr>
         <td><%= course.name %></td>
         <td><%= course.department %></td>
